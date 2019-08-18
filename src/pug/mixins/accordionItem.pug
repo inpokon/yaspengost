@@ -1,0 +1,5 @@
+mixin accordionItem(name, nameSvg, active)
+	li(class="accordion__item " +active)
+		a(href="#").accordion__link
+			+svg(nameSvg)(class= nameSvg).accordion__svg
+			span= name

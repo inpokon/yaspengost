@@ -1,0 +1,111 @@
+.footer {
+	height: 70vh;
+	background-color: $color-brown;
+	color: $color-gray;
+	padding-top: 7vh;
+	padding-bottom: 2vh;
+	.logo {
+		fill: $color-gray;
+		width: 8vw;
+		height: 10vh;
+	}
+	&__wrapper {
+		display: flex;
+		height: 100%;
+	}
+	&__left {
+		width: 50%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__right {
+		width: 50%;
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		padding-left: 6vw;
+		padding-top: 14vh;
+		padding-bottom: 5vh;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border: 6px solid #FFFFFF;
+			opacity: 0.1;
+		}
+	}
+	.subtitle {
+		color: $color-gray;
+		font-size: 2.1vw;
+		margin-top: 5vh;
+		line-height: 5vh;
+		margin-bottom: 4vh;
+	}
+	.par {
+		color: $color-gray;
+		width: 68%;
+		font-size: 0.8vw;
+	}
+	&__svg {
+		width: 1.7vw;
+		height: 1.7vw;
+		fill: $color-white;
+		margin-right: 2vw;
+	}
+	.par--italic {
+		font-style: italic;
+		font-size: 1.1vw;
+		line-height: 145%;
+		margin-bottom: 4vh;
+	}
+	&__wrap {
+		position: relative;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+	}
+	&__info-name {
+		font-family: 'Fira Sans', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 1vw;
+		line-height: 1.5vh;
+		text-transform: uppercase;
+		margin-bottom: 2vh;
+	}
+	&__info-wrap {
+		display: flex;
+		align-items: center;
+		margin-bottom: 4vh;
+	}
+	&__link {
+		color: $color-white;
+		font-size: 1vw;
+	}
+}
+.social {
+	a {
+		text-decoration: none;
+	}
+}
+.copy {
+	font-size: 0.4vw;
+}
+
+.rail {
+	position: absolute;
+	top: -15%;
+	right: -22%;
+	height: 130%;
+	width: 100%;
+	z-index: 0;
+	fill: $color-white;
+	opacity: 0.1;
+}

@@ -1,0 +1,52 @@
+section.materials
+	.container
+		.materials__wrap
+			.title
+				| Материалы и конструкция
+			.materials__sliders
+				ul.slider-type
+					li.slider-type__item.slider-type__item--active
+						.slider-type__icon-wrap
+							+svg('tree').slider-type__icon
+						.slider-type__name
+							| Дерево
+						.slider-type__arrow-wrap
+							+svg('arrow').slider-type__arrow
+					li.slider-type__item
+						.slider-type__icon-wrap
+							+svg('tree').slider-type__icon
+						.slider-type__name
+							| Каркас
+						.slider-type__arrow-wrap
+							+svg('arrow').slider-type__arrow
+					li.slider-type__item
+						.slider-type__icon-wrap
+							+svg('tree').slider-type__icon
+						.slider-type__name
+							| Тип массива
+						.slider-type__arrow-wrap
+							+svg('arrow').slider-type__arrow
+					li.slider-type__item
+						.slider-type__icon-wrap
+							+svg('tree').slider-type__icon
+						.slider-type__name
+							| Покраска
+						.slider-type__arrow-wrap
+							+svg('arrow').slider-type__arrow
+				.slider-material
+					.slider-material__head
+						.arrow.arrow--left
+							+svg('arrow')
+						h3.subtitle.slider-material__subtitle
+							| Дуб
+						.arrow.arrow--right
+							+svg('arrow')
+					.slider-material__body
+						img(src="images/slider-material/item-1.png")
+					.slider-material__foot
+						.title
+							| Преимущества:
+						ul.slider-material__foot-list
+							li Очень высокая прочность.
+							li Насыщенная фактура.
+							li Долговечен и не подвержен деструктивным процессам.

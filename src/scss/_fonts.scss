@@ -1,1 +1,63 @@
 // stylelint-disable no-empty-source
+
+
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../resources/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+	url('../resources/fonts/HelveticaNeueCyr-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../resources/fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
+	url('../resources/fonts/HelveticaNeueCyr-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HelveticaNeueCyr';
+	src: url('../resources/fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+	url('../resources/fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Fira Sans';
+	src: url('../resources/fonts/FiraSans-Medium.woff2') format('woff2'),
+	url('../resources/fonts/FiraSans-Medium.woff') format('woff'),
+	url('../resources/fonts/FiraSans-Medium.ttf') format('ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Fira Sans';
+	src: url('../resources/fonts/FiraSans-Bold.woff2') format('woff2'),
+	url('../resources/fonts/FiraSans-Bold.woff') format('woff'),
+	url('../resources/fonts/FiraSans-Bold.ttf') format('ttf');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../resources/fonts/Montserrat-Regular.woff2') format('woff2'),
+	url('../resources/fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../resources/fonts/Montserrat-Medium.woff2') format('woff2'),
+	url('../resources/fonts/Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../resources/fonts/Montserrat-Italic.woff2') format('woff2'),
+	url('../resources/fonts/Montserrat-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+

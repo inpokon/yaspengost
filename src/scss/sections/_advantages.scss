@@ -1,0 +1,91 @@
+.advantages {
+	background: url("../../images/advantages-bg.jpg") center no-repeat;
+	background-size: cover;
+	color: $color-white;
+	position: relative;
+	z-index: 1;
+	height: 100vh;
+	&__wrap {
+		background-color: rgba($color-white, 0.45);
+		padding: 11.4vh 0 200px;
+		margin-left: 32px;
+		width: 37.7vw;
+		height: 100%;
+	}
+	&__title {
+		margin-left: 128px;
+	}
+	&__subtitle {
+		margin-left: 128px;
+	}
+	&__info {
+		position: absolute;
+		right: 23.5vw;
+		bottom: 18.2vh;
+		width: 20vw;
+		height: 20vw;
+		background-color: rgba($color-brown, 0.95);
+		border-radius: 50%;
+		box-shadow: 0px 4px 14px #000000, 0px 14px 14px rgba(0, 0, 0, 0.24);
+		&-wrap {
+			padding-top: 4vw;
+			padding-left: 5vw;
+			font-family: 'Fira Sans', sans-serif;
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			text-transform: uppercase;
+		}
+		&-title {
+			font-size: 1.6vw;
+			color: $color-brown-light;
+		}
+		&-big {
+			font-size: 8vw;
+			line-height: 8vw;
+		}
+		&-subtitle {
+			font-size: 2.2vw;
+			line-height: 3.15vw;
+		}
+	}
+}
+.accordion {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	&__item {
+		width: 85%;
+		background-color: rgba($color-brown, 0.13);
+		margin-bottom: 2px;
+		border-radius: 0 3px 3px 0;
+		padding: 2vh 0 2vh 128px;
+		cursor: pointer;
+		&.active {
+			background-color: $color-brown;
+			.accordion__svg {
+				fill: $color-white;
+			}
+			.accordion__link {
+				color: $color-white;
+			}
+		}
+	}
+	&__svg {
+		width: 35px;
+		height: 35px;
+		fill: $color-brown;
+		margin-right: 27px;
+	}
+	&__link {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 1.37vw;
+		line-height: normal;
+		letter-spacing: 0.03em;
+		text-decoration: none;
+		color: $color-black;
+		display: flex;
+		align-items: center;
+	}
+}

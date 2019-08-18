@@ -1,0 +1,143 @@
+.style {
+	background: url("../../images/style-bg.jpg") center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	padding-top: 11.4vh;
+}
+.style-slider {
+	position: relative;
+	z-index: 2;
+}
+.style-slide {
+	display: flex;
+	&__photo {
+		border: 6px solid $color-white;
+		box-sizing: border-box;
+		box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+		width: 33.1vw;
+		height: 78vh;
+		background-color: $color-white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		img {
+			max-height: 100%;
+			max-width: 100%;
+		}
+	}
+	&__wrap {
+		padding-left: 4.6vw;
+		max-width: 39.5vw;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__title {
+		height: max-content;
+	}
+	&__arrows {
+		display: flex;
+		margin-top: 2.5vh;
+		height: max-content;
+		div:first-child {
+			margin-right: 1.5vw;
+		}
+	}
+	&__subtitle {
+		color: $color-white;
+		margin-top: 3.5vh;
+		margin-bottom: 5vh;
+		max-width: 75%;
+		height: max-content;
+	}
+	&__desc {
+		height: 100%;
+	}
+	&__par {
+		color: white;
+		font-style: normal;
+		font-weight: normal;
+		line-height: 145%;
+		font-size: 1.2vw;
+		margin-bottom: 4vh;
+		margin-top: 0;
+	}
+	&__dots {
+		display: flex;
+		margin-bottom: 8.35vh;
+	}
+}
+.arrow {
+	border: 1px solid $color-brown-light;
+	width: 2.6vw;
+	height: 2.6vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: rgba($color-brown-light, 0.3);
+	cursor: pointer;
+	transition: background-color .3s;
+	svg {
+		max-width: 50%;
+		max-height: 50%;
+		fill: $color-brown-light;
+		transition: fill .3s;
+	}
+	&--right {
+		transform: rotate(180deg);
+	}
+	&:hover {
+		background-color: $color-brown-light;
+		svg {
+			fill: $color-brown;
+		}
+	}
+}
+.line {
+	position: absolute;
+	top: -50vh;
+	left: -38vw;
+	width: 70vw;
+	height: 300vh;
+	background-color: $color-brown;
+	z-index: 0;
+	transform: rotate(27deg);
+}
+.sections-wrap {
+	position: relative;
+	overflow: hidden;
+}
+
+.dot {
+	width: 3.65vw;
+	height: 1.5vh;
+	background-color: rgba($color-white, 0.5);
+	margin-right: 1vw;
+	cursor: pointer;
+	transition: border-color .3s, background-color .3s;
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 0;
+		background-color: $color-brown-light;
+		transition: width .3s;
+	}
+	&:hover {
+		background-color: rgba($color-white, 0.8);
+	}
+	&:active::before{
+		width: 100%;
+	}
+	&--active {
+		background-color: $color-brown-light;
+		&:hover {
+			background-color: $color-brown-light;
+		}
+	}
+}

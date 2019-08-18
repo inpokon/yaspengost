@@ -1,7 +1,14 @@
 extends pug/base
 
 append vars
-	//- ...
 
 block content
-	//- ...
+	include pug/common/menu/menu
+	include pug/sections/main/main
+	include pug/sections/advantages/advantages
+	.sections-wrap
+		.line
+		include pug/sections/blockStyle/blockStyle
+		include pug/sections/materials/materials
+		include pug/sections/feedback/feedback
+	include pug/sections/footer/footer

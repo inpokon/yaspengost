@@ -1,0 +1,32 @@
+.btn {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1vw;
+	line-height: 2.5vh;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	color: $color-white;
+	padding: 1.5vh 2.35vw 2vh;
+	background: linear-gradient(270deg, $color-brown 0%, rgba(23, 32, 31, 0) 100%), $color-green;
+	border-radius: 50px;
+	border: 2px solid $color-white;
+	transition: all .6s;
+	&:hover {
+		background: linear-gradient(-270deg, $color-brown 0%, rgba(23, 32, 31, 0) 100%), $color-green;
+	}
+}
+.input {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1vw;
+	line-height: 2.5vh;
+	letter-spacing: 0.5px;
+	text-decoration: none;
+	color: $color-black;
+	padding: 1vh 2.35vw 1.5vh;
+	background: $color-white;
+	border-radius: 50px;
+	border: 2px solid $color-brown;
+	transition: all .6s;
+	outline: none;
+}
